@@ -33,7 +33,7 @@ public class DoubleComplex implements Complex<Double> {
         Double real= this.real+c.getReal();
         Double img=this.img+c.getImg();
 
-        Complex<Double> temp = new DoubleComplex(real, img);
+        DoubleComplex temp = new DoubleComplex(real, img);
         return temp;
 
 
@@ -43,7 +43,7 @@ public class DoubleComplex implements Complex<Double> {
         Double real= this.real-c.getReal();
         Double img=this.img-c.getImg();
 
-        Complex<Double> temp = new DoubleComplex(real, img);
+        DoubleComplex temp = new DoubleComplex(real, img);
         return temp;
 
     }
@@ -52,7 +52,7 @@ public class DoubleComplex implements Complex<Double> {
         Double real= this.real * c.getReal();
         Double img=this.img * c.getImg();
 
-        Complex<Double> temp = new DoubleComplex(real, img);
+        DoubleComplex temp = new DoubleComplex(real, img);
         return temp;
 
     }
@@ -61,11 +61,9 @@ public class DoubleComplex implements Complex<Double> {
         Double real= this.real / c.getReal();
         Double img=this.img / c.getImg();
 
-        Complex<Double> temp = new DoubleComplex(real, img);
+        DoubleComplex temp = new DoubleComplex(real, img);
         return temp;
     }
-
-    @Override
     public void prinComplex() {
         
         if (this.getImg() > 0)
